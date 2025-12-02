@@ -1,0 +1,365 @@
+bxdo1oxnCYVfjQsPB3A6XohroW5WwqrJWJeypXvoYvsQcPPHTuY293ra8BnzrQnghVhJTyidtHYuzEN3igfJ9ETz1DpW59Mz7
+
+bxdo1oxnCYVfjQsPB3A6XohroW5WwqrJWJeypXvoYvsQcPPHTuY293ra8BnzrQnghVhJTyidtHYuzEN3igfJ9ETz1DpW59Mz7
+
+
+loop
+
+
+public class loops {
+	
+	public void whileloop() {
+		//while loop --> initialization --> while(condition) -->
+		//{ body of loop and increment
+		 int a= 20;
+		 while(a<=30) {
+			 System.out.println(a);
+			 a++;
+			 }
+	}
+	
+	public void dowhileloop() {
+		// exit level   dowhile --> initialization --> do{ body increment/decrement }
+		//while(condition)
+		
+		int m = 100;
+		do {
+			System.out.println(m);
+			m--;
+		}
+		while(m>=1);
+	}
+	public void forloop() {
+		//syntax(for initialization, condition , increment/decrement);
+		
+		for(int i = 1; i<=20; i++) {
+			if(i<=15) {
+				System.out.println(i);
+			}
+			
+		}
+		
+		
+	}
+	
+	public void whiletask() {
+		
+		//while
+		 int a= 100;
+		 while(a>=1) {
+			 System.out.println(a);
+			 a--;
+			 }
+		 }
+	public void dowhiletask() {
+		
+	 
+	}
+		
+		
+
+	public static void main(String[] args) {
+		loops nm = new loops();
+		//nm.whileloop();
+		nm.dowhileloop();
+		//nm.forloop();
+		//nm.whiletask();
+		//nm.dowhiletask();
+
+	}
+
+}
+
+conditions
+
+
+public class Conditions {
+	
+	int a = 60, b= 20;
+	
+	public void ifcon() {
+		if(a<b)
+		{
+		System.out.println(a);
+		}
+	}
+	
+	public void ifelsecon() {
+		//if condition 
+		//syntax: if(condition) --> true executed the body{ }
+		if(a<b)
+		{
+		System.out.println(a);
+		}
+		else {
+			System.out.println("invalid");
+		}
+	}
+	public void elseifcon() {
+		//elseif
+		if(a<b)
+		{
+			System.out.println("greater");
+		}
+		else if(a==b)
+		{
+			System.out.println("less");
+		}
+		else if(a>=b)
+		{
+			System.out.println("equal");
+		}
+		else
+		{
+			System.out.println("invaild");
+		}
+	}
+	
+	public void switchcon() {
+		//switch condition 
+		//syntax switch(condition) switch to condition and print the body then break the case
+		char  letter = 'u';
+		
+		switch (letter) {
+		case'a':{
+			System.out.println(a+b);
+			break;
+		}
+		case'e':{
+			System.out.println(a-b);
+			break;
+		}
+		case'i':{
+			System.out.println(a*b);
+			break;
+		}
+		case'o':{
+			System.out.println(a/b);
+			break;
+		}
+		case'u':{
+			System.out.println(a%b);
+			break;
+		}
+		default:{
+			System.out.println("invalid");
+		}
+		}
+		
+	}
+	
+	
+	public static void main(String[] args) {
+		Conditions ab = new Conditions();
+		//ab.ifcon();
+		//ab.ifelsecon();
+		//ab.elseifcon();
+		ab.switchcon();
+		
+	}
+
+}
+
+operator
+
+
+public class Operators {
+	
+	public void air() {
+		//Arithmetic
+		int a = 25;
+		int b = 30;
+		int c = a+b;
+		int x = 100;
+		int y = 2;
+		
+	 int d = a-b;
+	 int e = a*b;
+	 int f = x/y;
+		
+		System.out.println("Addition of two numbers:"  +c);
+		System.out.println("Subration of two numbers:"  +d);
+		System.out.println("Multiple of two numbers:"  +e);
+		System.out.println("Division of two numbers:"  +f);
+}
+	public void assign() {
+		//assignment operator
+		int a = 45;
+		int b = 76;
+		
+		 a+= 2;
+		 b-= 2;
+		System.out.println(a);
+		System.out.println(b);
+
+	}
+	public void indec() {
+		//increment and decrement
+		int d = 44;
+		int e = 55;
+		
+		d++;
+		System.out.println(d);
+		e--;
+		System.out.println(e);
+}
+	public void compare() {
+		//Comparative
+		int a = 30;
+		int b = 70;
+		
+		int c= 20;
+		int d = 20;
+		// <,>,==,<=,>=
+		boolean less = a<b;
+		System.out.println(less);
+		
+		boolean great = a>b;
+		System.out.println(great);
+		
+		boolean equal = c==d;
+		System.out.println(equal);
+		
+		boolean lessequal = a<=b;
+		System.out.println(lessequal);
+		
+		boolean greatequal = a>=d;
+		System.out.println(greatequal);
+		
+		boolean notequal = a!=d;
+		System.out.println(notequal);
+	}
+	public void string() {
+		//String
+		String a = "shalini";
+		System.out.println(a + " " +"anguraj");
+	}
+	public void logical() {
+		//Logical operator
+		int a = 10, b = 100;
+		int c = 70, d = 90;
+	 
+		boolean and = ((a==b) && (a<d));
+			System.out.println(and);
+		boolean or = ((a<=b) || (c>d));
+			System.out.println(or);
+		boolean not = !(a==b);
+			System.out.println(not);
+		boolean nand = (!((a>=b) && (a<c))); 
+			System.out.println(nand);
+		boolean nor = (!((a>c) || (d<b)));
+			System.out.println(nor);
+			
+	}
+	
+
+	public static void main(String[] args) {
+		Operators nm = new Operators();
+	//	nm.air();
+	//	nm.assign();
+	//	nm.indec();
+	//	nm.compare();
+	//	nm.string();
+		nm.logical();
+}
+
+}
+datatypes
+
+package Basic;
+
+public class MethodCreation {
+	
+	//Method Creation Syntax:  accessmodifier  returntype   methodname(){}  
+	public void data() {
+		
+		int a=200;
+		int b=5000000;
+		long c=234567843;
+		double d = 876.67895678;
+		float e = 5678.986445678f;
+		
+		char f = 'S';
+		String h = "Shalini";
+
+		System.out.println(a);
+		System.out.println(b);
+		System.out.println(c);
+		System.out.println(d);
+		System.out.println(e);
+		System.out.println(f);
+		System.out.println(h);
+
+	}
+	
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		//to create object in class
+		//syntax: classname  objectname = new classname()
+		MethodCreation nm = new MethodCreation();
+		nm.data();
+	}
+
+}
+basic java
+package Basic;
+
+public class Basicjava {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.print("hello, ");
+		System.out.println("hi this is shalini anguraj");
+
+	}
+
+}
+
+
+
+public class stringpalindrome {
+	
+	public static void main(String[]args) {
+		int r,temp,sum=0;
+		int n= 545;
+		temp=n;
+		
+		while(n>0)
+			
+			r=n%10;
+			sum=(sum*10)+r;
+			n=n/10;
+			
+		if(temp==sum)
+			System.out.println("Given string is palindrome ");
+		else
+			System.out.println("Given string is not a palindrome ");
+	}
+
+}
+
+
+public class armstrong {
+
+	public static void main(String[] args) {
+		int c=0;
+		int n=153;
+		int temp = n;
+		while(n>0)
+		{
+			int a = n%10;
+			n =n/10;
+			c = c+(a*a*a);	
+		}
+		if (temp == c)
+			System.out.println("armstrong number");
+		else
+			System.out.println("not armstrong number");
+			
+	}
+
+}
+
